@@ -128,5 +128,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "volta": {
+    "node": "16.14.2",
+    "npm": "8.5.0"
   }
 }
