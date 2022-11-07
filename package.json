@@ -31,6 +31,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "tsc",
+    "postinstall": "npm run build",
     "postbuild": "npm run update-version && npm run invariants && npm run sourcemaps && npm run rollup && npm run prepdist && npm run resolve && npm run verify-version",
     "update-version": "node config/version.js update",
     "verify-version": "node config/version.js verify",
